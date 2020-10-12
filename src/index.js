@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom';
 import './app/layout/style.css';
 import App from './app/layout/App';
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
+
+// const rootEl = document.getElementById('root');
+// function render() {
+//   ReactDOM.render(<App />, rootEl)
+// }
+
+// if (module.hot) {
+//   module.hot.accept('./app/layout/App', function () {
+//     setTimeout(render);
+//   })
+// }
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </BrowserRouter>
+   ,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
